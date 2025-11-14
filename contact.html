@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+    <h1>Contact Me</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+    </nav>
+</header>
+
+<section>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Your name" required><br>
+        <input type="email" name="email" placeholder="Your email" required><br>
+        <textarea name="message" rows="5" placeholder="Your message"></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Tara Kumari</p>
+</footer>
+</body>
+</html>
